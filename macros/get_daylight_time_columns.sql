@@ -5,7 +5,7 @@
     {"name": "daylight_end_utc", "datatype": "datetime"},
     {"name": "daylight_offset", "datatype": dbt.type_int()},
     {"name": "daylight_start_utc", "datatype": "datetime"},
-    {"name": "time_zone", "datatype": dbt_utils.type_string()},
+    {"name": "time_zone", "datatype": dbt.type_string()},
     {"name": "year", "datatype": dbt.type_int()}
 ] %}
 

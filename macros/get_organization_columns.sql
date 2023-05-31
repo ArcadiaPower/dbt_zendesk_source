@@ -7,12 +7,12 @@
     {"name": "external_id", "datatype": dbt.type_int()},
     {"name": "group_id", "datatype": dbt.type_int()},
     {"name": "id", "datatype": dbt.type_int()},
-    {"name": "name", "datatype": dbt_utils.type_string()},
+    {"name": "name", "datatype": dbt.type_string()},
     {"name": "notes", "datatype": dbt.type_int()},
     {"name": "shared_comments", "datatype": "boolean"},
     {"name": "shared_tickets", "datatype": "boolean"},
     {"name": "updated_at", "datatype": dbt.type_timestamp()},
-    {"name": "url", "datatype": dbt_utils.type_string()}
+    {"name": "url", "datatype": dbt.type_string()}
 ] %}
 
 {{ return(columns) }}

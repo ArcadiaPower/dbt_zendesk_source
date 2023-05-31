@@ -1,8 +1,8 @@
 {% macro get_ticket_comment_columns() %}
 
 {% set columns = [
-    {"name": "_fivetran_synced", "datatype": dbt_utils.type_string()},
-    {"name": "body", "datatype": dbt_utils.type_string()},
+    {"name": "_fivetran_synced", "datatype": dbt.type_string()},
+    {"name": "body", "datatype": dbt.type_string()},
     {"name": "call_duration", "datatype": dbt.type_int()},
     {"name": "call_id", "datatype": dbt.type_int()},
     {"name": "created", "datatype": dbt.type_timestamp()},

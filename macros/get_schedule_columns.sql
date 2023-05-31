@@ -7,10 +7,10 @@
     {"name": "end_time", "datatype": dbt.type_int()},
     {"name": "end_time_utc", "datatype": dbt.type_int()},
     {"name": "id", "datatype": dbt.type_int()},
-    {"name": "name", "datatype": dbt_utils.type_string()},
+    {"name": "name", "datatype": dbt.type_string()},
     {"name": "start_time", "datatype": dbt.type_int()},
     {"name": "start_time_utc", "datatype": dbt.type_int()},
-    {"name": "time_zone", "datatype": dbt_utils.type_string()}
+    {"name": "time_zone", "datatype": dbt.type_string()}
 ] %}
 
 {{ return(columns) }}
