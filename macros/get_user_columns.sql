@@ -1,17 +1,17 @@
 {% macro get_user_columns() %}
 
 {% set columns = [
-    {"name": "_fivetran_synced", "datatype": dbt_utils.type_timestamp()},
+    {"name": "_fivetran_synced", "datatype": dbt.type_timestamp()},
     {"name": "active", "datatype": "boolean"},
     {"name": "alias", "datatype": dbt_utils.type_string()},
     {"name": "authenticity_token", "datatype": dbt_utils.type_int()},
     {"name": "chat_only", "datatype": "boolean"},
-    {"name": "created_at", "datatype": dbt_utils.type_timestamp()},
+    {"name": "created_at", "datatype": dbt.type_timestamp()},
     {"name": "details", "datatype": dbt_utils.type_int()},
     {"name": "email", "datatype": dbt_utils.type_string()},
     {"name": "external_id", "datatype": dbt_utils.type_int()},
     {"name": "id", "datatype": dbt_utils.type_int()},
-    {"name": "last_login_at", "datatype": dbt_utils.type_timestamp()},
+    {"name": "last_login_at", "datatype": dbt.type_timestamp()},
     {"name": "locale", "datatype": dbt_utils.type_string()},
     {"name": "locale_id", "datatype": dbt_utils.type_int()},
     {"name": "moderator", "datatype": "boolean"},

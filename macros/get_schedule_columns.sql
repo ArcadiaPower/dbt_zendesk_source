@@ -2,8 +2,8 @@
 
 {% set columns = [
     {"name": "_fivetran_deleted", "datatype": "boolean"},
-    {"name": "_fivetran_synced", "datatype": dbt_utils.type_timestamp()},
-    {"name": "created_at", "datatype": dbt_utils.type_timestamp()},
+    {"name": "_fivetran_synced", "datatype": dbt.type_timestamp()},
+    {"name": "created_at", "datatype": dbt.type_timestamp()},
     {"name": "end_time", "datatype": dbt_utils.type_int()},
     {"name": "end_time_utc", "datatype": dbt_utils.type_int()},
     {"name": "id", "datatype": dbt_utils.type_int()},

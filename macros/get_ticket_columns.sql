@@ -1,13 +1,13 @@
 {% macro get_ticket_columns() %}
 
 {% set columns = [
-    {"name": "_fivetran_synced", "datatype": dbt_utils.type_timestamp()},
+    {"name": "_fivetran_synced", "datatype": dbt.type_timestamp()},
     {"name": "allow_channelback", "datatype": "boolean"},
     {"name": "assignee_id", "datatype": dbt_utils.type_int()},
     {"name": "brand_id", "datatype": dbt_utils.type_int()},
-    {"name": "created_at", "datatype": dbt_utils.type_timestamp()},
+    {"name": "created_at", "datatype": dbt.type_timestamp()},
     {"name": "description", "datatype": dbt_utils.type_string()},
-    {"name": "due_at", "datatype": dbt_utils.type_timestamp()},
+    {"name": "due_at", "datatype": dbt.type_timestamp()},
     {"name": "external_id", "datatype": dbt_utils.type_int()},
     {"name": "forum_topic_id", "datatype": dbt_utils.type_int()},
     {"name": "group_id", "datatype": dbt_utils.type_int()},
